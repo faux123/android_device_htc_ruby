@@ -132,4 +132,4 @@ $(call inherit-product-if-exists, vendor/htc/ruby/ruby-vendor.mk)# media profile
 $(call inherit-product, device/htc/ruby/media_a1026.mk)
 $(call inherit-product, device/htc/ruby/media_htcaudio.mk)
 
-$(call inherit-product, frameworks/base/build/phone-xhdpi-1024-dalvik-heap.mk)
+#$(call inherit-product, frameworks/base/build/phone-xhdpi-1024-dalvik-heap.mk)
