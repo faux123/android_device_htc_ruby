@@ -21,14 +21,14 @@ on emmc-fs
     mkdir /vendor/firmware/adsp 0771 system system
     mkdir /vendor/firmware/misc_mdm 0771 system system
 
-    mount ext4 /dev/block/mmcblk0p10 /system wait ro data=ordered noauto_da_alloc
-    mount ext4 /dev/block/mmcblk0p10 /data wait noatime nosuid nodev data=ordered noauto_da_alloc
-    mount ext4 /dev/block/mmcblk0p10 /cache wait noatime nosuid nodev data=ordered noauto_da_alloc
-    mount ext4 /dev/block/mmcblk0p10 /devlog wait noatime nosuid nodev data=ordered noauto_da_alloc
+    mount ext4 /dev/block/mmcblk0p29 /system wait ro data=ordered noauto_da_alloc
+    mount ext4 /dev/block/mmcblk0p31 /data wait noatime nosuid nodev data=ordered noauto_da_alloc
+    mount ext4 /dev/block/mmcblk0p30 /cache wait noatime nosuid nodev data=ordered noauto_da_alloc
+    mount ext4 /dev/block/mmcblk0p32 /devlog wait noatime nosuid nodev data=ordered noauto_da_alloc
 
-    mount vfat /dev/block/mmcblk0p10 /vendor/firmware/adsp wait ro shortname=lower
-    mount vfat /dev/block/mmcblk0p10 /vendor/firmware/misc wait ro shortname=lower
-    mount vfat /dev/block/mmcblk0p10 /vendor/firmware/misc_mdm wait ro shortname=lower
+    mount vfat /dev/block/mmcblk0p21 /vendor/firmware/adsp wait ro shortname=lower
+    mount vfat /dev/block/mmcblk0p17 /vendor/firmware/misc wait ro shortname=lower
+    mount vfat /dev/block/mmcblk0p18 /vendor/firmware/misc_mdm wait ro shortname=lower
 
     symlink /vendor/firmware/adsp/q6.b07 /vendor/firmware/q6.b07
     symlink /vendor/firmware/adsp/q6.b06 /vendor/firmware/q6.b06
